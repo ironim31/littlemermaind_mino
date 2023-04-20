@@ -45,10 +45,13 @@ em{
     color: #B00723;
     font-size: 45px;
 }
-.checkpoint_summery dl dt dd{
+.checkpoint_summery dl dt{
     color: #B00723;
     font-size: 30px;
 }
-.checkpoint_summery dl dd {
+.checkpoint_summery dl dd{
     color: black;
+}
+.checkpoint .checkpoint_summery dl dd strong{
+    color: #B00723;
 }
