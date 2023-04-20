@@ -1,0 +1,54 @@
+/* ヘッダー＆KV */
+.littlemermaid_Page{
+    background-color: #E4DAC9 ;
+}
+picture{
+    display: flex;
+    justify-content: center;
+}
+dt{
+    display: flex;
+    justify-content: center;
+    color: #B00723;
+    font-weight: bold;
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+dd{
+    text-align: center;
+    color: #B00723;
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+a{
+    display: flex;
+    justify-content: center;
+}
+.logo img{
+    width: 150px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+h1 img{
+    width: 400px;
+    margin-bottom: 30px;
+}
+.priceboard img{
+    width: 336px;
+}
+span{
+    color: #B00723;
+    font-size: 11px;
+}
+em{
+    color: #B00723;
+    font-size: 45px;
+}
+.checkpoint_summery dl dt dd{
+    color: #B00723;
+    font-size: 30px;
+}
+.checkpoint_summery dl dd {
+    color: black;
+}
