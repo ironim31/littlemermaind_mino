@@ -1,6 +1,7 @@
-/* ヘッダー＆KV */
+/* ヘッダー＆KV littlemermaid_Page*/
 .littlemermaid_Page{
     background-color: #E4DAC9 ;
+    height: 700px;
 }
 picture{
     display: flex;
@@ -26,16 +27,37 @@ a{
     justify-content: center;
 }
 .logo img{
-    width: 150px;
+    width: 140px;
     margin-top: 50px;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 }
 h1 img{
-    width: 400px;
+    width: 320px;
+    height: auto;
     margin-bottom: 30px;
 }
 .priceboard img{
     width: 336px;
+}
+.breadimg{
+    display: flex;
+}
+.breadimg picture img{
+    width: 375px;
+}
+/* チェックポイントここから */
+.checkpoints{
+    margin-top: 50px;
+    width: 100vw;
+}
+/* .checkpoint{
+    display: flex;
+    flex-direction: row-reverse;
+} */
+dt{
+    width: 300px;
+    display: flex;
+    justify-content: flex-start;
 }
 span{
     color: #B00723;
@@ -48,10 +70,34 @@ em{
 .checkpoint_summery dl dt{
     color: #B00723;
     font-size: 30px;
+    text-align: left;
+}
+.checkpoint_summery dl dt span{
+    font-size: 20px;
+}
+.checkpoint_summery dl dt em{
+    font-size: 70px;
+    margin-bottom: 60px;
 }
 .checkpoint_summery dl dd{
     color: black;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.8;
+    text-align: left;
 }
 .checkpoint .checkpoint_summery dl dd strong{
     color: #B00723;
+    font-size: 48px;
+    font-weight: bold;
+}
+.checkpoint_summery dl dd span{
+    font-size: 14px;
+}
+.point01{
+    background-image: url(./img/bg_checkPoint1-b4d58e744ff5f56703ba259b0c5f401e97225a44dd254376db0cad6c8733b62f.webp);
+    background-position: left;
+    background-size: 50%;
+    height: 400px;
+    background-repeat: no-repeat;
 }
