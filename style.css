@@ -1,13 +1,36 @@
 /* ヘッダー＆KV littlemermaid_Page*/
-.littlemermaid_Page{
-    background-color: #E4DAC9 ;
-    height: 700px;
-}
-picture{
+.littlemermaid_Page {
+    background-color: #E4DAC9;
+    height: 820px;
     display: flex;
     justify-content: center;
 }
-dt{
+
+header {
+    width: 1285px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+picture {
+    display: flex;
+    justify-content: center;
+}
+
+.abailable_store {
+    z-index: 30;
+}
+
+.abailable_store span {
+    font-size: 12px;
+}
+
+.abailable_store dd {
+    font-size: 16px;
+}
+
+dt {
     display: flex;
     justify-content: center;
     color: #B00723;
@@ -15,89 +38,312 @@ dt{
     font-size: 11px;
     margin-bottom: 10px;
 }
-dd{
+
+dd {
     text-align: center;
     color: #B00723;
     font-weight: bold;
     font-size: 13px;
     margin-bottom: 8px;
 }
-a{
+
+a {
     display: flex;
     justify-content: center;
 }
-.logo img{
-    width: 140px;
-    margin-top: 50px;
-    margin-bottom: 35px;
+
+.logo img {
+    width: calc(379px / 2);
+    margin-top: 100px;
+    margin-bottom: 22px;
 }
-h1 img{
-    width: 320px;
+
+h1 img {
+    width: calc(867px / 2);
     height: auto;
     margin-bottom: 30px;
+    z-index: 40;
 }
-.priceboard img{
-    width: 336px;
+
+.priceboard img {
+    width: calc(865px / 2);
+    height: auto;
+    margin-top: 20px;
+    z-index: 40;
 }
-.breadimg{
-    display: flex;
+
+#subscriptionbutton {}
+
+#subscriptionbutton a span .icon {
+    width: 10px;
+    height: 16px;
+    box-sizing: border-box;
+    background-image: url(https://jre.favy.jp/assets/jre/custom/shops/little…a05e5d7d4650b71104a0141f844e56f73bc0ce2a2f4d.webp);
+    z-index: 40;
 }
-.breadimg picture img{
-    width: 375px;
+
+.text {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: #B00723;
+    background-color: #B00723;
+    border-radius: 40px;
+    padding: 20px 60px;
+    margin-top: 40px;
+    z-index: 40;
 }
-/* チェックポイントここから */
-.checkpoints{
-    margin-top: 50px;
+
+/* .breadimg picture{
+    height: 826px;
+    width: 100%;
+    background-image: url(./img/bg_signboardHeader-SP-64b177427b55d32769f12ff0403e9c722a050c2926948caf052036361d863211.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+} */
+.breadimg {
+    height: 1285px;
     width: 100vw;
+    position: relative;
+    z-index: 20;
 }
-/* .checkpoint{
+
+.breadimg picture {
+    height: 826px;
+    width: 100%;
+    position: absolute;
+    top: -707px;
+    left: 19px;
+    transform: scale(-1, 1);
+}
+
+/* チェックポイントここから */
+.point_description {
+    width: 60vw;
+    height: auto;
+    padding: 0 7% 0 5%;
+}
+
+.POINT {
+    font-size: 20px;
+    font-weight: bold;
+    color: #B00723;
+    ;
+}
+
+.number {
+    font-size: 70px;
+    font-weight: bold;
+    color: #B00723;
+    margin-bottom: 12px;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #B00723;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 18px;
+    color: black;
+    line-height: 1.8;
+}
+
+.annotation {
+    font-size: 10px;
+    color: #B00723;
+}
+
+.point_img {
+    width: 60%;
+    height: auto;
+}
+
+.point_1 {
+    width: 100vw;
+    height: auto;
+    margin-top: 150px;
     display: flex;
     flex-direction: row-reverse;
-} */
-dt{
-    width: 300px;
+    justify-content: space-between;
+}
+
+.point_2 {
+    width: 100vw;
+    height: auto;
+    margin-top: 70px;
     display: flex;
+    justify-content: flex-end;
+}
+
+.point_2 .point_description {
+    padding: 0 5% 0 7%;
+}
+
+.point_3 {
+    width: 100vw;
+    height: auto;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* オーダーの仕方ここから */
+/* オーダーの仕方　左側 */
+.how_to_order img {
+    width: 100vw;
+    height: auto;
+}
+
+.how_to_order_box {
+    width: 100vw;
+    height: auto;
+    padding: 40px;
+    background-color: #E4DAC9;
+    margin-top: -6px;
+}
+
+.littlemermaid_plan2 {
+    width: 50%;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: flex-start;
 }
-span{
+
+.littlemermaid_plan2 .logo img {
+    width: calc(379px / 2);
+    margin-bottom: 22px;
+    margin-top: 0;
+}
+
+.littlemermaid_plan2 h1 img {
+    width: 444px;
+}
+
+.plan2_header p {
     color: #B00723;
-    font-size: 11px;
-}
-em{
-    color: #B00723;
-    font-size: 45px;
-}
-.checkpoint_summery dl dt{
-    color: #B00723;
-    font-size: 30px;
-    text-align: left;
-}
-.checkpoint_summery dl dt span{
-    font-size: 20px;
-}
-.checkpoint_summery dl dt em{
-    font-size: 70px;
-    margin-bottom: 60px;
-}
-.checkpoint_summery dl dd{
-    color: black;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1.8;
-    text-align: left;
-}
-.checkpoint .checkpoint_summery dl dd strong{
-    color: #B00723;
-    font-size: 48px;
+    font-size: 17px;
     font-weight: bold;
+    text-align: left;
+    margin-bottom: 20px;
 }
-.checkpoint_summery dl dd span{
-    font-size: 14px;
+
+/* オーダーの仕方 右側 */
+.sliced_bread_imgbox {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    margin-left: 20px;
 }
-.point01{
-    background-image: url(./img/bg_checkPoint1-b4d58e744ff5f56703ba259b0c5f401e97225a44dd254376db0cad6c8733b62f.webp);
-    background-position: left;
-    background-size: 50%;
-    height: 400px;
-    background-repeat: no-repeat;
+
+.sliced_bread {
+    width: 100%;
+    height: auto;
+}
+
+.how_to_order_box {
+    display: flex;
+}
+
+/* オーダーの仕方 メイン部分 */
+.how_to_order_box_2 {
+    width: 100vw;
+    height: auto;
+    background-color: #E4DAC9;
+    padding: 100px 100px 170px;
+}
+
+.how_to_order_title {
+    margin: 0 auto;
+}
+
+.how_to_order_title span {
+    font-size: 18px;
+    text-align: center;
+}
+
+.how_to_order_title {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 250px;
+}
+
+.how_to_order_box_2small {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.how_to_order_box_2small .box {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box_description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.how_to_order_box_2small .box span {
+    font-size: 13px;
+    color: #B00723;
+    text-align: center;
+    padding: 0;
+}
+
+.how_to_order_box_2small .box h3 {
+    font-size: 48px;
+    color: #B00723;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+    padding: 0;
+    margin-bottom: 8px;
+}
+
+.how_to_order_box_2small .box .description {
+    font-size: 31px;
+    color: #B00723;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.5;
+    padding-top: 15px;
+}
+
+.how_to_order_box_2small .box p {
+    font-size: 20px;
+    line-height: 1.8;
+}
+.how_to_order_box_2small img {
+    width: 50px;
+    height: 50px;
+}
+
+.how_to_order_box_2small .box img {
+    width: 90%;
+    height: auto;
+    margin: 0 auto 25px;
+}
+footer{
+    width: 100vw;
+    height: 80px;
+    background-color: #B00723;
+    padding: 20px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+span{
+    color: #E4DAC9;
+    font-size: 20px;
+    font-weight: bold;
 }
