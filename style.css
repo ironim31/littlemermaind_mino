@@ -13,17 +13,17 @@ header {
     align-items: flex-start;
 }
 
-picture {
-    display: flex;
-    justify-content: center;
-}
-
 .abailable_store {
     z-index: 30;
 }
 
 .abailable_store span {
     font-size: 12px;
+    position: absolute;
+    top: -27px;
+    left: calc(50% - 25px);
+    background-color: #E4DAC9;
+    padding: 0 5px;
 }
 
 .abailable_store dd {
@@ -37,6 +37,9 @@ dt {
     font-weight: bold;
     font-size: 11px;
     margin-bottom: 10px;
+    background-color: #B00723;
+    height: 2px;
+    position: relative;
 }
 
 dd {
@@ -72,8 +75,6 @@ h1 img {
     z-index: 40;
 }
 
-#subscriptionbutton {}
-
 #subscriptionbutton a span .icon {
     width: 10px;
     height: 16px;
@@ -94,14 +95,6 @@ h1 img {
     z-index: 40;
 }
 
-/* .breadimg picture{
-    height: 826px;
-    width: 100%;
-    background-image: url(./img/bg_signboardHeader-SP-64b177427b55d32769f12ff0403e9c722a050c2926948caf052036361d863211.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-} */
 .breadimg {
     height: 1285px;
     width: 100vw;
@@ -109,12 +102,12 @@ h1 img {
     z-index: 20;
 }
 
-.breadimg picture {
+.breadimg{
     height: 826px;
     width: 100%;
     position: absolute;
-    top: -707px;
-    left: 19px;
+    right: 0;
+    bottom: -384px;
     transform: scale(-1, 1);
 }
 
@@ -311,7 +304,7 @@ h2 {
 }
 
 .how_to_order_box_2small .box .description {
-    font-size: 31px;
+    font-size: 25px;
     color: #B00723;
     font-weight: bold;
     text-align: center;
@@ -335,6 +328,7 @@ h2 {
     margin: 0 auto 25px;
     transform: rotate(0deg);
 }
+
 footer{
     width: 100vw;
     height: 80px;
@@ -348,6 +342,9 @@ span{
     color: #E4DAC9;
     font-size: 20px;
     font-weight: bold;
+}
+.arrow{
+    align-self: center;
 }
 /* ここからレスポンシブ対応 */
 @media screen and (max-width: 768px){ 
@@ -365,7 +362,7 @@ span{
     h1 img{
         width: 320px;
         height: auto;
-        margin: 0 auto;
+        margin: 0 auto 30px;
     }
     .abailable_store span{
         color: #B00723;
@@ -387,17 +384,22 @@ span{
         text-align: center;
     }
     header{
-        display: block;
-        margin: 70px auto;
+        display: flex;
+        align-items: center;
+        margin: 40px 25px 0;
     }
-    .breadimg picture img{
+    .breadimg{
+        height: 200px;
+    }
+    .breadimg img{
         height: 200px;
         width: auto;
         position: absolute;
-        top: 684px;
-        left: 458px;
-        transform: scale(-1,1);
+        bottom: 0;
+        left: 0;
+        /* transform: scale(-1,1); */
     }
+     /* オーダーの仕方メイン部分 */
     .POINT{
         font-size: 11px;
     }
@@ -438,5 +440,87 @@ span{
     .point_3 .point_img{
         padding-top: 30px;
         width: 80vw;
+    }
+    /* オーダーの仕方ヘッダー部分 */
+    .how_to_order{
+        margin-top: 45px;
+        padding: 70px 0 0;
+    }
+    .littlemermaid_plan2{
+        width: 100vw;
+        padding: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .how_to_order_box .littlemermaid_plan2 .logo img{    
+        width: 140px;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+        padding-bottom: 20px;
+    }
+    .how_to_order_box .littlemermaid_plan2 h1 img{
+        display: block;
+        width: 296px;
+        height: auto;
+        margin: 0 auto 50px;
+    }
+    .how_to_order_box .littlemermaid_plan2 .plan2_header p{
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    }
+    .how_to_order_box .littlemermaid_plan2 .plan2_header .abailable_store span{
+        font-size: 10px;
+    }
+    .how_to_order_box .littlemermaid_plan2 .plan2_header .abailable_store dd{
+        font-size: 12px;
+    }
+    .how_to_order_box .littlemermaid_plan2 .plan2_header #subscriptionbutton .text{
+        font-size: 16px;
+        width: 300px;
+        padding: 10px 0;
+    }
+    .how_to_order_box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0px 100px ;
+    }
+    .how_to_order_box_2{
+        padding: 0 100px;
+    }
+    .how_to_order_box_2 h2{
+        font-size: 20px;
+    }
+    .how_to_order_box_2small .box h3{
+        font-size: 45px;
+    }
+    .how_to_order_box_2small .box p {
+        font-size: 15px;
+    }
+    .how_to_order_box_2 .how_to_order_box_2small .box .box_description .description p{
+        font-size: 15px;
+    }
+    .how_to_order_box_2small .box img{
+        width: 150px;
+        height: 150px;
+    }
+    .how_to_order_box_2small{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .how_to_order_box_2small .arrow{
+        width: 30px;
+        height: 30px;
+        transform: rotate( 0deg );
+        margin: 30px 0;
+    }
+    .how_to_order_box_2 h2.how_to_order_title{
+        margin-bottom: 50px;
     }
 }/* レスポンシブ対応ここまで */
