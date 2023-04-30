@@ -534,10 +534,13 @@ span{
         font-size: 45px;
     }
     .how_to_order_box_2small .box p {
-        font-size: 15px;
+        font-size: 12px;
+    }
+    .how_to_order_box_2small .box .description{
+        font-size: 14px;
     }
     .how_to_order_box_2 .how_to_order_box_2small .box .box_description .description p{
-        font-size: 15px;
+        font-size: 12px;
     }
     .how_to_order_box_2small .box img{
         width: 150px;
