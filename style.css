@@ -423,7 +423,7 @@ span{
         height: 215px;
         width: 290px;
         position: absolute;
-        bottom: 206px;
+        bottom: 0px;
         left: 0;
         transform: scale(1,1);
     }
@@ -438,7 +438,10 @@ span{
         font-size: 24px;
     }
     .description{
-        font-size: 14px;
+        font-size: 12px;
+    }
+    .point_description{
+        width: 100vw;
     }
     .point_1{
         display: flex;
