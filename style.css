@@ -369,12 +369,14 @@ span{
    .littlemermaid_Page{
     height: 700px;
     width: 100vw;
+    margin: 0 auto;
    }
    .kv{
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 90%;
 }
     .littlemermaid_Page header .logo picture img{
     width: 140px;
@@ -386,13 +388,20 @@ span{
         height: auto;
         margin: 0 auto 30px;
     }
-    .abailable_store span{
-        color: #B00723;
-        margin-top: 0px;
+    dl{
+        width: 100%;
     }
-    .abailable_store dd{
+    dl span{
+        font-size: 10px;
+        width: 50px;
+        margin-top: 7px;
+    }
+    dd{
         font-size: 12px;
         font-weight: bold;
+    }
+    dt{
+        font-size: 10px;
     }
     .littlemermaid_Page .priceboard img{
         width: 320px;
