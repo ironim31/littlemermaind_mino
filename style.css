@@ -2,12 +2,15 @@
 .littlemermaid_Page {
     background-color: #E4DAC9;
     height: 820px;
+    width: 100vw;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    padding: 0 0 0 40px;
 }
 
 header {
     width: 1285px;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -20,34 +23,48 @@ header {
 .abailable_store span {
     font-size: 12px;
     position: absolute;
-    top: -27px;
+    color: #B00723;
+    top: -7px;
     left: calc(50% - 25px);
     background-color: #E4DAC9;
     padding: 0 5px;
 }
-
 .abailable_store dd {
     font-size: 16px;
 }
-
+dl{
+    width: 420px;
+    height: auto;
+    position: relative;
+}
 dt {
     display: flex;
     justify-content: center;
     color: #B00723;
     font-weight: bold;
     font-size: 11px;
-    margin-bottom: 10px;
+    margin-bottom: 21px;
     background-color: #B00723;
     height: 2px;
     position: relative;
+    z-index: 40;
 }
-
+dt span{
+    color: #B00723;
+    background-color: #E4DAC9;
+    position: absolute;
+    top: -15px;
+    width: 100px;
+    text-align: center;
+}
 dd {
     text-align: center;
     color: #B00723;
     font-weight: bold;
     font-size: 13px;
     margin-bottom: 8px;
+    position: relative;
+    z-index: 40;
 }
 
 a {
@@ -65,6 +82,7 @@ h1 img {
     width: calc(867px / 2);
     height: auto;
     margin-bottom: 30px;
+    position: relative;
     z-index: 40;
 }
 
@@ -72,6 +90,7 @@ h1 img {
     width: calc(865px / 2);
     height: auto;
     margin-top: 20px;
+    position: relative;
     z-index: 40;
 }
 
@@ -95,20 +114,17 @@ h1 img {
     z-index: 40;
 }
 
-.breadimg {
-    height: 1285px;
-    width: 100vw;
-    position: relative;
-    z-index: 20;
-}
-
 .breadimg{
     height: 826px;
     width: 100%;
+    background-image: url(./img/bg_signboardHeader-SP-64b177427b55d32769f12ff0403e9c722a050c2926948caf052036361d863211.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
     position: absolute;
+    bottom: 87px;
     right: 0;
-    bottom: -384px;
     transform: scale(-1, 1);
+    z-index: 20;
 }
 
 /* チェックポイントここから */
@@ -133,7 +149,7 @@ h1 img {
 }
 
 h2 {
-    font-size: 50px;
+    font-size: 42px;
     font-weight: bold;
     color: #B00723;
     margin-bottom: 20px;
@@ -354,6 +370,12 @@ span{
     height: 700px;
     width: 100vw;
    }
+   .kv{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
     .littlemermaid_Page header .logo picture img{
     width: 140px;
     height: auto;
@@ -366,7 +388,7 @@ span{
     }
     .abailable_store span{
         color: #B00723;
-        margin-top: 20px;
+        margin-top: 0px;
     }
     .abailable_store dd{
         font-size: 12px;
@@ -389,15 +411,12 @@ span{
         margin: 40px 25px 0;
     }
     .breadimg{
-        height: 200px;
-    }
-    .breadimg img{
-        height: 200px;
-        width: auto;
+        height: 215px;
+        width: 290px;
         position: absolute;
-        bottom: 0;
+        bottom: 206px;
         left: 0;
-        /* transform: scale(-1,1); */
+        transform: scale(1,1);
     }
      /* オーダーの仕方メイン部分 */
     .POINT{
