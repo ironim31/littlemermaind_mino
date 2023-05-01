@@ -369,6 +369,7 @@ span{
    .littlemermaid_Page{
     /* height: 700px; */
     width: 100vw;
+    height: 100vh;
     margin: 0 auto;
    }
    .kv{
@@ -377,6 +378,7 @@ span{
     justify-content: center;
     align-items: center;
     width: 90%;
+    padding-bottom: 40px;
 }
     .littlemermaid_Page header .logo picture img{
     width: 140px;
