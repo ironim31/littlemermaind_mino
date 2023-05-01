@@ -120,8 +120,8 @@ h1 img {
     background-image: url(./img/bg_signboardHeader-SP-64b177427b55d32769f12ff0403e9c722a050c2926948caf052036361d863211.webp);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: right bottom;
     position: absolute;
-    bottom: 87px;
     right: 0;
     transform: scale(-1, 1);
     z-index: 20;
@@ -367,7 +367,7 @@ span{
 
    /* ヘッダー&KV */
    .littlemermaid_Page{
-    height: 700px;
+    /* height: 700px; */
     width: 100vw;
     margin: 0 auto;
    }
@@ -397,7 +397,7 @@ span{
         margin-top: 7px;
     }
     dd{
-        font-size: 12px;
+        font-size: 10px;
         font-weight: bold;
     }
     dt{
@@ -422,9 +422,9 @@ span{
     .breadimg{
         height: 215px;
         width: 290px;
-        position: absolute;
-        bottom: 0px;
+        background-position: left bottom;
         left: 0;
+        bottom: 0;
         transform: scale(1,1);
     }
      /* オーダーの仕方メイン部分 */
@@ -498,10 +498,10 @@ span{
         display: block;
         width: 296px;
         height: auto;
-        margin: 0 auto 50px;
+        margin: 0 auto 40px;
     }
     .how_to_order_box .littlemermaid_plan2 .plan2_header p{
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
     text-align: center;
     margin-bottom: 20px;
@@ -524,8 +524,20 @@ span{
         width: 100%;
         padding: 0px 100px ;
     }
+    .sliced_bread_imgbox{
+        width: 300px;
+        height: auto;
+        margin: 0;
+    }
+    .sliced_bread{
+        width: 100%;
+        height: auto;
+        padding: 0;
+
+    }
+    /* オーダーの仕方メイン部分 */
     .how_to_order_box_2{
-        padding: 0 100px;
+        padding: 0 20px 50px;
     }
     .how_to_order_box_2 h2{
         font-size: 20px;
